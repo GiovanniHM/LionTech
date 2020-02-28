@@ -20,16 +20,31 @@
   background-color: rgba(0, 0, 0, .5);
 
 }
+#carousel .overlay .container,
+#carousel .overlay .row{
+height: 100%;
+}
 
+/* Custom */
 
-#carousel .overlay p{
-  text-align: right;
+/* Buttons  */
+.btn-Lion{
+  background-color:#3ca5d1;
+  color: white;
+}
+
+.btn-Lion:hover{
+  background-color: #1991b3;
+}
+
+/* txt */
+
+.text-Leion{
+  color: #1991b3 !important;
 
 }
-#carousel .overlay h1{
-  text-align: right;
 
-}
+
 
 /* /hero */
 
