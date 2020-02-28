@@ -1,7 +1,8 @@
 /* hero */
 #conference .carousel-inner{ 
-  max-height: 70vh;
+  max-height: 80vh;
   object-fit: cover;
+  
   
 
 }
@@ -44,7 +45,24 @@ height: 100%;
 
 }
 
-
-
 /* /hero */
 
+/* Media query */
+@media (max-width: 480px) {
+
+.conference-title h1{
+  font-size: 2em;
+}
+
+.conference-description{
+  font-size: .9em;
+}
+}
+
+@media (max-width: 320px) {
+
+.overlay button{
+    margin-top: .5em;
+  } 
+
+/* /Media query */
