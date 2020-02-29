@@ -44,8 +44,65 @@ height: 100%;
   color: #1991b3 !important;
 
 }
-
 /* /hero */
+
+/* Speakers */
+/* Coustom */
+
+/* Badges */
+.badge-women{
+  background-color: palevioletred;
+  color: white;
+}
+
+.badge-js{
+  background-color: #FBBC05;
+  color: white;
+}
+
+.badge-game{
+  background-color: #0F7DC2;
+  color: white;
+}
+
+.badge-ai{
+  background-color: #006699;
+  color: white;
+}
+
+.badge-cshart{
+  background-color: #7B0099;
+  color: white;
+}
+
+.badge-android{
+  background-color: #A4C639;
+  color: white;
+}
+
+.badge-java{
+  background-color: #b07219;
+  color: white;
+}
+
+.badge-ar{
+  background-color: #427819;
+  color: white;
+}
+
+.badge-php{
+  background-color: #4F5D95;
+  color: white;
+}
+
+.badge-startups{
+  background-color: red;
+  color: white;
+}
+
+
+
+/* /Speakers */
 
 /* Media query */
 @media (max-width: 480px) {
