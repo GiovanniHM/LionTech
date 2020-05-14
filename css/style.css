@@ -1,3 +1,7 @@
+body{
+  /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
 /* ------------------> hero */
 #conference .carousel-inner{ 
   max-height: 80vh;
@@ -135,11 +139,13 @@ height: 100%;
 
 /*------------------> The place */
 .place{
-  background-color: #15BAE8;
+  background-color: #343a40;
+}
+.place-info{
+  color: white;
 }
 .place img{
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 /*------------------> /The place */
@@ -157,6 +163,7 @@ height: 100%;
   font-size: .9em;
 }
 }
+
 
 @media (max-width: 320px) {
 
