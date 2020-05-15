@@ -59,12 +59,12 @@ height: 100%;
   color: #999999;
 }
 
-.card-footer .card-footer-github a:hover{
+.card-footer-github a:hover{
   text-decoration: none;
   color: black;
 }
 
-.card-footer .card-footer-twitter a:hover{
+.card-footer-twitter a:hover{
   text-decoration: none;
   color: #00acee;
 }
@@ -150,7 +150,15 @@ height: 100%;
 
 /*------------------> /The place */
 
+footer{
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 
+color: white;
+}
+
+footer a{
+  color: white;
+}
 
 /*------------------> Media query */
 @media (max-width: 480px) {
