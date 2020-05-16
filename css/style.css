@@ -2,6 +2,10 @@ body{
   /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
+a{
+  /* text-decoration: none !important; */
+}
+
 /* ------------------> hero */
 #conference .carousel-inner{ 
   max-height: 80vh;
@@ -148,8 +152,10 @@ height: 100%;
   width: 100%;
 }
 
+
 /*------------------> /The place */
 
+/*------------------> footer */
 footer{
   background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 
@@ -159,6 +165,21 @@ color: white;
 footer a{
   color: white;
 }
+footer a:hover{
+  color: white;
+}
+footer ul{
+  list-style:none;
+  padding: 0;
+}
+footer .form-control{
+  width: 70%;
+}
+footer button{
+  width: 70%;
+}
+
+/*------------------> /footer */
 
 /*------------------> Media query */
 @media (max-width: 480px) {
