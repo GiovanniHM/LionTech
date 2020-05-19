@@ -12,7 +12,10 @@
   <!-- CSS style -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">   <title>LionTech</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <title>LionTech</title>
 </head>
 
 <body>
@@ -44,7 +47,8 @@
                 <a class="nav-link" href="#workshops">Talleres</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-Leion" href="#buyTikets">Comprar boletos</a>
+                <a class="nav-link text-Leion" data-target="#buyTiketsModal" data-toggle="modal"
+                href="#buyTikets" >Comprar boletos</a>
               </li>
             </div>
           </div>
@@ -80,7 +84,7 @@
                 sollicitudin pretium sapien ac pulvinar. Mauris tincidunt vel ante in imperdiet.
               </p>
               <a href="#" class="btn btn-outline-light conference-buttons ">Quiero ser orador</a>
-              <button class="btn btn-Lion conference-buttons" data-target="#ModalCompra" data-toggle="modal">Comprar
+              <button class="btn btn-Lion conference-buttons" data-target="#buyTiketsModal" data-toggle="modal">Comprar
                 tickets</button>
             </div>
           </div>
@@ -322,15 +326,13 @@
       </div>
     </div>
   </section>
-
   <!-- /Speakers -->
-
   <!-- The place -->
   <section class="place">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-6 pl-0 pr-0 ">
-          <img src="img/Leon-1.jpg"  alt="">
+          <img src="img/Leon-1.jpg" alt="">
         </div>
         <div class="col-12 col-md-6">
           <div class="place-info  pt-2 mb-4">
@@ -348,9 +350,8 @@
     </div>
   </section>
   <!-- /The place -->
-
-    <!-- Footer -->
-  <footer class="pb-4 pt-4" >
+  <!-- Footer -->
+  <footer class="pb-4 pt-4">
     <div class="container mt-4 mb-4 ">
       <div class="row">
         <div class="col-md-12 col-lg-4 mb-3">
@@ -368,48 +369,88 @@
             </div>
           </div>
           <a href="mailto:giovannihernandezm26@gmail.com?Subject=Desarrollo%20de%20software">
-           <em >GiovanniHernandezM26@gmail.com</em> 
-          </a> 
+            <em>GiovanniHernandezM26@gmail.com</em>
+          </a>
         </div>
-       
         <div class="col-md-6 col-lg-4 mb-3 ">
-         <h6>Newsletter</h6>
-         <form>
-          <div class="form-group">
-            <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Tu e-mail" aria-describedby="emailHelp">
-          </div>
-          <button type="submit" class="btn btn-outline-light conference-buttons">Registrarte </button>
-        </form>
+          <h6>Newsletter</h6>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Tu e-mail"
+                aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-outline-light conference-buttons">Registrarte </button>
+          </form>
         </div>
-
         <div class="col-md-6 col-lg-4 ">
           <h6>Politicas</h6>
           <ul>
             <li>
               <a href="/">
                 Política de privacidad
-                </a>
+              </a>
             </li>
             <li>
               <a href="/">
-                Términos y condiciones 
-               </a>
+                Términos y condiciones
+              </a>
             </li>
             <li>
               <a href="/">
-                Preguntas frecuentes  
-               </a>
+                Preguntas frecuentes
+              </a>
             </li>
           </ul>
         </div>
-        
-        
       </div>
     </div>
   </footer>
-
   <!-- /Footer -->
+  <!-- Modal buy tikets -->
+  <div class="modal fade" id="buyTiketsModal" tabindex="-1" role="dialog" 
+  aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalles de pago</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control"  aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Número de tarjeta</label>
+            <input type="number" class="form-control" maxlength="2">
+          </div>
+          <div class="form-row">
+            <div class="col-7">
+              <input type="text" class="form-control" placeholder="City">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="State">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Zip">
+            </div>
+          </div>
 
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- /Modal buy tikets -->
   <!-- Test -->
   <div class="container">
     <!-- <div class="row">
@@ -430,7 +471,6 @@
       </div>
       
     </div> -->
-
   </div>
   <!-- /Test -->
   <!-- Optional JavaScript -->

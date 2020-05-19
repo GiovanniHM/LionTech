@@ -179,7 +179,15 @@ footer button{
   width: 70%;
 }
 
+
 /*------------------> /footer */
+
+/* input[type="number"]
+{
+    -webkit-appearance: textfield !important;
+    margin: 0;
+    -moz-appearance:textfield !important;
+} */
 
 /*------------------> Media query */
 @media (max-width: 480px) {
