@@ -47,8 +47,8 @@
                 <a class="nav-link" href="#workshops">Talleres</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-Leion" data-target="#buyTiketsModal" data-toggle="modal"
-                href="#buyTikets" >Comprar boletos</a>
+                <a class="nav-link text-Leion" data-target="#buyTiketsModal" href="#" data-toggle="modal">Comprar
+                  boletos</a>
               </li>
             </div>
           </div>
@@ -83,9 +83,11 @@
                 parturient montes, nascetur ridiculus mus. Nulla eget maximus ligula, ac elementum sapien. Suspendisse
                 sollicitudin pretium sapien ac pulvinar. Mauris tincidunt vel ante in imperdiet.
               </p>
-              <a href="#" class="btn btn-outline-light conference-buttons ">Quiero ser orador</a>
-              <button class="btn btn-Lion conference-buttons" data-target="#buyTiketsModal" data-toggle="modal">Comprar
-                tickets</button>
+              <button type="button" class="btn btn-outline-light conference-buttons ">Quiero ser orador</button>
+              <button type="button" class="btn btn-Lion" data-toggle="modal" data-target="#buyTiketsModal">
+                Comprar tickets
+              </button>
+              
             </div>
           </div>
         </div>
@@ -407,70 +409,77 @@
   </footer>
   <!-- /Footer -->
   <!-- Modal buy tikets -->
-  <div class="modal fade" id="buyTiketsModal" tabindex="-1" role="dialog" 
-  aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detalles de pago</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control"  aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Número de tarjeta</label>
-            <input type="number" class="form-control" maxlength="2">
-          </div>
-          <div class="form-row">
-            <div class="col-7">
-              <input type="text" class="form-control" placeholder="City">
+  <div class="modal fade" id="buyTiketsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalles de pago</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group ">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="State">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Número de tarjeta</label>
+              <input type="text" class="form-control" maxlength="16">
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Zip">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Cantidad</label>
+              <input type="number" class="form-control" maxlength="2">
             </div>
-          </div>
-
-        </form>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="form-row form-group">
+              <div class="col-4">
+                <label class="control-label">CVC</label>
+                <input type="text" class="form-control" placeholder="123" maxlength="3">
+              </div>
+              <div class="col-4">
+                <label class="control-label">Expira</label>
+                <input type="text" class="form-control" placeholder="MM" maxlength="2">
+              </div>
+              <div class="col-4">
+                <!-- Carácter transparente label -->
+                <label class="control-label"> </label>
+                <input type="text" class="form-control" placeholder="YYYY" maxlength="4">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="alert alert-success ml-3 mr-3" role="alert">
+          Total: $600
+        </div>
+        <button type="button" class="btn btn-primary ml-3 mr-3">Pagar</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-   <!-- /Modal buy tikets -->
+  <!-- /Modal buy tikets -->
   <!-- Test -->
-  <div class="container">
-    <!-- <div class="row">
-      <div class="col-4" style="background-color: aquamarine; height: 60px;">
-      
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
-      <div class="col-4" style="background-color: blueviolet; height: 40px;">
-      
-      </div>
-      
     </div>
-    <div class="row">
-      <div class="col-4" style="background-color: blueviolet; height: 40px;">
-      
-      </div>
-      <div class="col-4" style="background-color: aquamarine; height: 60px;">
-      
-      </div>
-      
-    </div> -->
   </div>
   <!-- /Test -->
   <!-- Optional JavaScript -->
